@@ -1,0 +1,8 @@
+Why the problem exist:
+https://dzone.com/articles/making-sure-inter-team-communication-doesnt-work
+
+Ways to mitigate the problem:
+https://tech.gsa.gov/guides/Collaboration_Across_Agile_Teams/
+
+Another Solution:
+https://www.researchgate.net/publication/325188087_Inter-team_Coordination_in_Large-Scale_Agile_Development_A_Case_Study_of_Three_Enabling_Mechanisms
