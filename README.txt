@@ -4,3 +4,5 @@ Members :
 
 - Ruben Acuna
 - Sarthak Tiwari
+
+Draft folder contains the working file titled 'Draft'
