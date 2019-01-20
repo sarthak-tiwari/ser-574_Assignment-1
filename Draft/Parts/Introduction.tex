@@ -1,19 +1,33 @@
-As mentioned in the Agile Manifesto \cite{beck2001agile}, Individuals and Interactions are given more value than the processes and tools.
-At the same time, an agile team is supposed to contain all that is required for them to do their work, thus interactions no matter how valuable usually are done intra-team only.
-Thus, when a situation arrives where two or more agile teams need to work together to achieve a common goal the usual approach taken by companies fail.
-The agile approach of interacting in-person fails due to a few reasons such as the vertical structure of the company organization and the existence of middle managers \cite{dzone_article}.
-This large number of intermediaries in inter team communication causes the process to crumble and fall apart as it takes longer than usual time for messages to reach their destination then what agile can afford.
-This problem is harder to fix as this is so embedded in the working culture of the current organizations that changing them will take a long time, thus an immediate patch that works is required.
-And that’s where the approaches listed in the article comes in.
-We have collected a couple of approaches which if implemented efficiently results in a more stable and functioning agile process model. 
-Thus, in the following sections we will be explaining couple of approaches we came across.
-\linebreak
-\linebreak
-In Section ~\ref{sec:proc_impv}, we will be explaining the improvements that can be made to the process and team structures to get better collaboration out of the team involved.
-\linebreak
-\linebreak
-In Section ~\ref{sec:tech_impv}, we will be explaining the enhancements that can be done in the technology stack being used and in the different ways in which technology can help in improving the process.
-\linebreak
-\linebreak
-In Section ~\ref{sec:imp_of_dsgn}, we will be describing the importance of architecture and design in resolving this issue of inter-team communication in agile.
+%Introduction (Introducing the topic)
 
+%introduce agile
+Recently, agile approaches have become popular in software development.
+As outlined in the Agile Manifesto \cite{beck2001agile}, an agile process gives individuals and interactions value over processes and tools.
+%An agile team is supposed to contain all that is required for them to do their work, thus interactions no matter how valuable usually are done intra-team only.
+As software grows in complexity, situations arise where multiple agile teams need to work together to achieve a common goal.
+%explain what we are doing
+In this paper we survey several the issues that can arise when agile teams must work together.
+We also discuss approaches, which if implemented correctly, provide a more robust and functional process for inter-team agile development. 
+%
+%introduce the need to scale to multiple agile teams
+%However, the stucture of agile team does not lend itself to large teams, and so applying the agile process requires mutiple teams.
+Although an independent team may use an agile process with ease, additional considerations are required for complex systems where running multiple agile teams in parallel becomes necessary.
+The agile approach of interacting in-person fails due to a few reasons such as the vertical structure of the company organization and the existence of middle managers \cite{dzone_article}.
+
+%introduce potential issues (com, arch)
+The transition to multiple teams increases the importance of inter-team communication, from simple interpersonal communication, to system specification. 
+%arch
+In an agile process, where Big Design Up-front may typically be avoided, the move to multiple teams motivates a stronger need to communicate design decisions.
+In order for sucessful integration of techonological components, system elements must have well defined functional specifications, and interfaces.
+%com
+This large number of intermediaries in inter-team communication causes the process to fall apart as it takes longer than usual time for messages to reach their destination then what agile can afford.
+This problem is difficult to fix as this is so embedded in the working agile culture of the current organizations that changing them will take a long time, thus an immediate patch that works is required.
+
+
+
+
+%outline of rest of paper
+This document is separated into five sections: Introduction, Process Inprovements, Technology Improvements, Importance of Architecture \& Design, and Conclusion. 
+In Section ~\ref{sec:proc_impv}, we discuss the adaptations to an agile process, and team structure, to support better collaboration between teams.
+In Section ~\ref{sec:tech_impv}, we discuss the ways in which technology improve inter-team communication.
+In Section ~\ref{sec:imp_of_dsgn}, we discuss the role of architecture and design in mitigating communication issues.
