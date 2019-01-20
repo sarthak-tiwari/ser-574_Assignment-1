@@ -2,6 +2,8 @@
 % The first command in your LaTeX source must be the \documentclass command.
 \documentclass[sigplan,screen]{acmart}
 
+\usepackage{graphicx}
+
 %
 % defining the \BibTeX command - from Oren Patashnik's original BibTeX documentation.
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08emT\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
@@ -15,9 +17,9 @@
 \copyrightyear{2018}
 \acmYear{2018}
 \setcopyright{acmlicensed}
-\acmConference[Woodstock '18]{Woodstock '18: ACM Symposium on Neural Gaze Detection}{June 03--05, 2018}{Woodstock, NY}
-\acmBooktitle{Woodstock '18: ACM Symposium on Neural Gaze Detection, June 03--05, 2018, Woodstock, NY}
-\acmPrice{15.00}
+\acmConference[SER574 '19]{SER574 '19: Advanced Software Design}{January 20, 2019}{Mesa, AZ}
+\acmBooktitle{SER574 '19: Advanced Software Design, January 20, 2019, Mesa, AZ}
+\acmPrice{1500.00}
 \acmDOI{10.1145/1122445.1122456}
 \acmISBN{978-1-4503-9999-9/18/06}
 
@@ -80,8 +82,11 @@
 % of authors' names for this purpose.
 \renewcommand{\shortauthors}{Tiwari and Acu{\~n}a}
 
-
-\settopmatter{printacmref=false}						%RA: get rid of dumb ACM reference format BLAH BLAH
+%RA: remove the BLAH BLAH
+%see  https://tex.stackexchange.com/questions/346292/how-to-remove-conference-information-from-the-acm-2017-sigconf-template
+%\settopmatter{printacmref=false}						   %ACM reference format BLAH BLAH
+\renewcommand\footnotetextcopyrightpermission[1]{} %ACM premission thing
+%\pagestyle{plain}														 %ACM running header
 
 %
 % The abstract is a short summary of the work to be presented in the article.
@@ -97,33 +102,27 @@
 %
 \begin{CCSXML}
 <ccs2012>
- <concept>
-  <concept_id>10010520.10010553.10010562</concept_id>
-  <concept_desc>Computer systems organization~Embedded systems</concept_desc>
-  <concept_significance>500</concept_significance>
- </concept>
- <concept>
-  <concept_id>10010520.10010575.10010755</concept_id>
-  <concept_desc>Computer systems organization~Redundancy</concept_desc>
-  <concept_significance>300</concept_significance>
- </concept>
- <concept>
-  <concept_id>10010520.10010553.10010554</concept_id>
-  <concept_desc>Computer systems organization~Robotics</concept_desc>
-  <concept_significance>100</concept_significance>
- </concept>
- <concept>
-  <concept_id>10003033.10003083.10003095</concept_id>
-  <concept_desc>Networks~Network reliability</concept_desc>
-  <concept_significance>100</concept_significance>
- </concept>
+<concept>
+<concept_id>10011007.10011074.10011081.10011082.10011083</concept_id>
+<concept_desc>Software and its engineering~Agile software development</concept_desc>
+<concept_significance>500</concept_significance>
+</concept>
+<concept>
+<concept_id>10011007.10011074.10011134.10011135</concept_id>
+<concept_desc>Software and its engineering~Programming teams</concept_desc>
+<concept_significance>300</concept_significance>
+</concept>
+<concept>
+<concept_id>10003456.10003457.10003490.10003491.10003492</concept_id>
+<concept_desc>Social and professional topics~Project management techniques</concept_desc>
+<concept_significance>300</concept_significance>
+</concept>
 </ccs2012>
 \end{CCSXML}
 
-\ccsdesc[500]{Computer systems organization~Embedded systems}
-\ccsdesc[300]{Computer systems organization~Redundancy}
-\ccsdesc{Computer systems organization~Robotics}
-\ccsdesc[100]{Networks~Network reliability}
+\ccsdesc[500]{Software and its engineering~Agile software development}
+\ccsdesc[300]{Software and its engineering~Programming teams}
+\ccsdesc[300]{Social and professional topics~Project management techniques}
 
 %
 % Keywords. The author(s) should pick words that accurately describe the work being
@@ -141,16 +140,6 @@
 \input{./Parts/Main}
 
 \input{./Parts/Conclusion}
-
-\section{CCS Concepts and User-Defined Keywords}
-
-Two elements of the ``acmart'' document class provide powerful taxonomic tools for you to help readers find your work in an online search. 
-
-The ACM Computing Classification System --- \url{https://www.acm.org/publications/class-2012} --- is a set of classifiers and concepts that describe the computing discipline. Authors can select entries from this classification system, via \url{https://dl.acm.org/ccs/ccs.cfm}, and generate the commands to be included in the \LaTeX\ source. 
-
-User-defined keywords are a comma-separated list of words and phrases of the authors' choosing, providing a more flexible way of describing the research being presented.
-
-CCS concepts and user-defined keywords are required for all short- and full-length articles, and optional for two-page abstracts. 
 
 %
 % The next two lines define the bibliography style to be used, and the bibliography file.
