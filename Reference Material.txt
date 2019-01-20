@@ -9,3 +9,14 @@ https://www.researchgate.net/publication/325188087_Inter-team_Coordination_in_La
 
 Agile Manifesto:
 https://agilemanifesto.org/
+
+
+Publications:
+* Inter-team Coordination in Large-Scale Agile Development: A Case Study of Three Enabling Mechanisms
+* Assigned roles for inter-team coordination in large-scale agile development: a literature review
+* Information flows at inter-team boundaries in agile information systems development
+
+Blogs:
+https://medium.com/@achardypm/agile-team-organisation-squads-chapters-tribes-and-guilds-80932ace0fdc
+
+Maybe "On the Criteria To Be Used in Decomposing Systems into Modules" just b/c it's in the slides.
