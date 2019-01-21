@@ -2,19 +2,19 @@
 %overview
 A fundamental issue in tasking teams with separate goals is that teams can become isolated from other teams pursuing similar or related goals.
 % problem
-Consider a scenario at Spotify \cite{kniberg12}: a tester on a particular agile team invested time to solve a particular problem, which was also faced by another tester on a different team. Without communication, these team members would perform redundant work.
+Consider a scenario at Spotify \cite{kniberg12}: a tester in a particular Squad invested time to solve a particular problem, which was also faced by another tester on a different team. Without communication, these team members would perform redundant work.
 To address this problem Spotify defines Chapters, which are crosscutting groups which gather individuals with similar roles across different Squads. 
-At Spotify \cite{kniberg12}, offices are laid out so that the Squads making up a Tribe are spatially close.
+At Spotify, offices are laid out so that the Squads making up a Tribe are spatially close \cite{kniberg12}.
 This leads to an environment where an informal exchange of information on the Tribe's work will occur.
 %Although larger than Squads (7-10 members), Tribes are limited in size (< 100) to ensure smooth communication.
 %todo: any more issues? Dunbar
 
-In general, consistency becomes an issue when expanding to multiple teams.
-The product owner in an agile process model is the person with the project vision, and with a small team, the product owner can clearly communicate this to every team member.
+Consistency becomes an issue when expanding to multiple teams.
+The product owner in an agile process model is the person with the project vision, and with a small team, they can clearly communicate it to every team member.
 Members can even query the product owner directly when in doubt.
 However, in large projects where multiple teams are working together, it is practically impossible for the owner to continue what they did in a small team.
 This motivates a need for a formal definition of their vision as it gives teams something to consult to when encountering a design decision.
-Without a functional specification, teams will be unable to produce components which can be integrated.
+Without a functional specification, teams will be unable to produce components which can be easily integrated.
 
 \section{Supporting Communication in Inter-team Development}
 \label{sec:prop_appro} 
@@ -48,7 +48,7 @@ Selecting an appropriate technology stack plays an important role in enabling co
 %The following are areas where technology can enable a more efficient agile process.
 
 %Communication Tools
-Since agile focuses on personal interaction, particularly face-to-face conversation, video conferencing tools can lower the bar to inter-team interactions.
+Since agile focuses on interactions, like face-to-face conversation, video conferencing tools can lower the bar to inter-team interactions.
 They also make communication real-time, reducing delay due to time spent communicating ideas across teams.
 %Integration Tools
 Continuous integration tools can go a long way in identifying inter-team problems early in development
@@ -58,8 +58,8 @@ as it reveals the impact of changes on the entire project.
 \subsection{Importance of Architecture and Design}\label{sec:imp_of_dsgn}
 %Why is Design/Architecture so important when doing this?
 
-System design and architecture acts as a common vision for not only teams but also for the communication between all the product owners.
-The system design acts as a “deadlock breaker in decisions” \cite{architecureRole_article} for situations where teams disagree on a particular design path.
+System design and architecture acts as a common framework for not only teams but also for the communication between all the product owners.
+The system design acts as a “deadlock breaker in decisions” \cite{architecureRole_article} for situations where teams disagree on a particular design path, and ensures that components will be constructed so they can be integrated into the whole.
 %non specification fix
 A second approach addresses this issue from an organizational standpoint by defining a "system owner" role \cite{kniberg12}.
 This role is more casual than an architect role, and focuses on defining a "go-to" person who can maintain a long term stewardship over a sub-system. 
