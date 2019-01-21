@@ -1,7 +1,7 @@
 ﻿\section{Spotify: A Canonical Example} 
 \label{sec:spt_ex} 
-For a typical example of a company using many agile teams, consider Spotify who has over 30 teams \cite{kniberg12}.
-The basic element of the development organization at Spotify is the Squad, analogous to a Scrum team.
+For an example of a company using many agile teams, consider Spotify who has over 30 teams \cite{kniberg12}.
+The basic element of development organization at Spotify is the Squad, analogous to a Scrum team.
 Each Squad is the autonomous developer, with a localized working area, of a particular sub-system in the product.
 Squads in related areas are grouped together into Tribes. 
 The overall structure is illustrated in Figure~\ref{fig:spotify_structure}.
@@ -14,7 +14,7 @@ Although larger than Squads (7-10 members), Tribes are limited in size (< 100) t
 \end{figure}
 
 
-\subsection{Communication}
+\subsection{Communication at Spotify}
 %social fixes
 A fundamental issue with tasking teams with different goals is that teams can become isolated with respect to the context of their work.
 At Spotify \cite{kniberg12}, offices are laid out so that the Squads making up a Tribe are spatially close. This leads to an environment where an informal exchange of information on the Tribes work will occur.
@@ -23,13 +23,16 @@ Consider another scenario: a tester on a particular agile team invests time to s
 To address this problem Spotify defines Chapters \cite{kniberg12}, which are crosscutting divisions which gathers individuals with similar roles across different Squads. 
 
 
-\section{Proposed Approach}
+\section{Communication in Inter-team Development}
 \label{sec:prop_appro} 
 The general problem of communication can be tackled from two perspectives.
 First, stakeholders at different levels need to have ways to pass information.
 This can be addressed by adaptions in development process and leveraging technology.
 Second, the quality of communication needs to be accurate.
 This can be addressed by sound system specification through architecture and design.
+%In Section ~\ref{sec:proc_impv}, we discuss the adaptations to an agile process, and team structure, to support better collaboration between teams.
+%In Section ~\ref{sec:tech_impv}, we discuss the ways in which technology improve inter-team communication
+%In Section ~\ref{sec:imp_of_dsgn}, we discuss the role of architecture and design in mitigating communication issues.
 
 \subsection{Process Improvements} 
 \label{sec:proc_impv}
@@ -50,16 +53,14 @@ This can be limited by having regular meetings of product owners where the scope
 All the initial, intermediate and final planning sessions should be made such that all the teams which are or could be impacted by that part of the project are part of the meeting.
 This can assist in early agreement on high-level requirements and standardization of inter-team interfaces.
 
-\subsection{Technology Improvements} 
-\label{sec:tech_impv}
-	A good technology stack can be a powerful tool in maintaining a widely distributed team.
-	Good communication and management tools can help the teams in keeping track of things that they need to do so that other teams can work as intended.
-	The following are some of the areas where the technology can assist the teams in making a more efficient agile process environment.
+\subsection{Technology Approaches} \label{sec:tech_impv}
+Selecting an appropriate technology stack plays an important role maintaining a widely distributed team.
+Technology can help teams in keeping track of things that they need to do so that other teams can work efficiently.
+The following are some of the areas where the technology can enable a more efficient agile process environment.
 
 %Communication Tools
-As agile focuses on personal interaction with highest importance given to face-to-face conversation, conferencing tools such as video conferencing and WebEx etc. can help the team interactions become more fluid and clearer.
-They also make the communication real-time thus removing the lag in process due to time spent in communicating ideas across teams.
-
+Since agile focuses on personal interaction, particularly face-to-face conversation, video conferencing tools can help the team interactions become more fluid and clearer.
+They also make the communication real-time thus removing the delay in process due to time spent in communicating ideas across teams.
 %Integration Tools
 Continuous integration tools can go a long way in finding out inter-team problems early in the process as every time any team makes a change, its impact on the entire project can be seen.
 
@@ -76,4 +77,4 @@ This role is more casual than an architect role, and focuses on defining a "go-t
 
 In addition to specification of system elements, architecture can also be used to empower teams.
 As discussed by Parnas \cite{Parnas72}, there are two general approaches to decomposing systems: 1) compartmentalizing a computational process and, 2) focusing on information hiding.
-The latter approach ideal for agile development since this approaches defines system components in terms of design dicisions, which empowers invidual teams.
+The latter approach ideal for agile development since this approaches defines system components in terms of design decisions, which empowers individual teams.
