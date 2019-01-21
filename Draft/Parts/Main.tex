@@ -1,11 +1,12 @@
 ﻿\section{Communication Concerns}\label{sec:spt_ex} 
 %overview
-A fundamental issue with tasking teams with different goals is that teams can become isolated with respect to the context of their work.
+A fundamental issue in tasking teams with separate goals is that teams can become isolated from other teams pursuing similar or related goals.
 % problem
 Consider a scenario at Spotify \cite{kniberg12}: a tester on a particular agile team invested time to solve a particular problem, which was also faced by another tester on a different team. Without communication, these team members would perform redundant work.
 To address this problem Spotify defines Chapters, which are crosscutting groups which gather individuals with similar roles across different Squads. 
-At Spotify \cite{kniberg12}, offices are laid out so that the Squads making up a Tribe are spatially close. This leads to an environment where an informal exchange of information on the Tribe's work will occur.
-%Although larger than Squads (7-10 members), Tribes are limited in size (< 100) to ensure smooth communication.
+At Spotify \cite{kniberg12}, offices are laid out so that the Squads making up a Tribe are spatially close.
+This leads to an environment where an informal exchange of information on the Tribe's work will occur.
+Although larger than Squads (7-10 members), Tribes are limited in size (< 100) to ensure smooth communication.
 %todo: any more issues? Dunbar
 
 In general, consistency becomes an issue when expanding to multiple teams.
@@ -13,6 +14,7 @@ The product owner in an agile process model is the person with the project visio
 Members can even query the product owner directly when in doubt.
 However, in large projects where multiple teams are working together, it is practically impossible for the owner to continue what they did in a small team.
 This motivates a need for a formal definition of their vision as it gives teams something to consult to when encountering a design decision.
+Without a functional specification, teams will be unable to produce components which can be integrated.
 
 \section{Supporting Communication in Inter-team Development}
 \label{sec:prop_appro} 
@@ -24,7 +26,7 @@ This can be addressed by thorough system specification through architecture.
 
 \subsection{Process Adaptations} 
 \label{sec:proc_impv}
-	There are many changes \cite{collabAcrossAgile_article} that can be incorporated into a process model to decrease the chance that parallel agile teams run into problems during integration.
+	There are many changes \cite{collabAcrossAgile_article} that can be incorporated into a process model to decrease the chance that parallel agile teams run into problems during development or integration.
 
 %Changes in standups
 One critical aspect of an agile process is daily standups which are a platform for letting each team member know the work being done in other parts of the team and correlate it with the work they are performing.
@@ -42,8 +44,7 @@ All the initial, intermediate and final planning sessions should be organized su
 This can assist in early agreement on high-level requirements and standardization of inter-team interfaces.
 
 \subsection{Technology Improvements} \label{sec:tech_impv}
-Selecting an appropriate technology stack plays an important role in maintaining a distributed development environment.
-Technology enables communication and task management so that teams can work together efficiently.
+Selecting an appropriate technology stack plays an important role in enabling communication and task management so that teams can work together efficiently.
 %The following are areas where technology can enable a more efficient agile process.
 
 %Communication Tools
