@@ -3,16 +3,16 @@
 A fundamental issue with tasking teams with different goals is that teams can become isolated with respect to the context of their work.
 % problem
 Consider a scenario at Spotify \cite{kniberg12}: a tester on a particular agile team invested time to solve a particular problem, which was also faced by another tester on a different team. Without communication, these team members would perform redundant work.
-To address this problem Spotify defines Chapters, which are crosscutting divisions which gathers individuals with similar roles across different Squads. 
+To address this problem Spotify defines Chapters, which are crosscutting groups which gather individuals with similar roles across different Squads. 
 At Spotify \cite{kniberg12}, offices are laid out so that the Squads making up a Tribe are spatially close. This leads to an environment where an informal exchange of information on the Tribe's work will occur.
 %Although larger than Squads (7-10 members), Tribes are limited in size (< 100) to ensure smooth communication.
 %todo: any more issues? Dunbar
 
-In general, consistency becomes as issue when expanding to multiple teams.
-The product owner in an agile process model is the person with the project vision and if it is a small team the product owner can clearly communicate this to every team member.
+In general, consistency becomes an issue when expanding to multiple teams.
+The product owner in an agile process model is the person with the project vision, and with a small team, the product owner can clearly communicate this to every team member.
 Members can even query the product owner directly when in doubt.
-However, in large scale projects where multiple teams are working together, it is practically impossible for the owner to keep doing what they did in a small team.
-That’s where a formal definition of their vision is useful as it gives teams something to consult to when encountering a design decision.
+However, in large projects where multiple teams are working together, it is practically impossible for the owner to continue what they did in a small team.
+This motivates a need for a formal definition of their vision as it gives teams something to consult to when encountering a design decision.
 
 \section{Supporting Communication in Inter-team Development}
 \label{sec:prop_appro} 
@@ -20,7 +20,7 @@ The general problem of communication can be tackled from two perspectives.
 First, stakeholders at and across different levels need to have communication channels.
 This can be addressed by adaptations in development process and leveraging technology.
 Second, the quality (e.g., accuracy) of communication needs to be high.
-This can be addressed by thorough system specification through architecture and design.
+This can be addressed by thorough system specification through architecture.
 
 \subsection{Process Adaptations} 
 \label{sec:proc_impv}
@@ -28,17 +28,17 @@ This can be addressed by thorough system specification through architecture and 
 
 %Changes in standups
 One critical aspect of an agile process is daily standups which are a platform for letting each team member know the work being done in other parts of the team and correlate it with the work they are performing.
-This uncovers differences in understanding early in development and prevents last minute discovery of mismatches in development.
+This uncovers differences in understanding early in development and prevents last minute discovery of discrepancies.
 In the case of multiple agile teams this problem is compounded as a stand up is a closed activity of the team itself, thus preventing other teams from knowing the results or discussions of each other.
 This can be resolved by having a representative of each concerned team be present in the daily standup thus letting each team know the status of the other teams.
 
 %Changes to Product Owner
-Although the product owner is responsible for agile teams under his supervision, projects with multiple agile teams may have multiple product owners, and over time the vision of the owners may drift and lead the development in different directions.
+Although the product owner is responsible for agile teams under his supervision, projects with multiple agile teams may have multiple product owners, and so over time the vision of the owners may drift and lead the development in different directions.
 This can be limited by having regular meetings of product owners where the scope and vision of the project can be synchronized.
 %This can be a bi-weekly or monthly meeting depending on the size of the project.
 
 %Changes in Planning Sessions
-All the initial, intermediate and final planning sessions should be made such that teams which are or could be impacted by that part of the project are part of the meeting.
+All the initial, intermediate and final planning sessions should be organized such that teams which are, or could be, impacted by that part of the project are part of the meeting.
 This can assist in early agreement on high-level requirements and standardization of inter-team interfaces.
 
 \subsection{Technology Improvements} \label{sec:tech_impv}
@@ -48,7 +48,7 @@ Technology enables communication and task management so that teams can work toge
 
 %Communication Tools
 Since agile focuses on personal interaction, particularly face-to-face conversation, video conferencing tools can lower the bar to inter-team interactions.
-They also make communication real-time, reducing delay due to time spent in communicating ideas across teams.
+They also make communication real-time, reducing delay due to time spent communicating ideas across teams.
 %Integration Tools
 Continuous integration tools can go a long way in identifying inter-team problems early in development
 as it reveals the impact of changes on the entire project.
@@ -57,11 +57,11 @@ as it reveals the impact of changes on the entire project.
 \subsection{Importance of Architecture and Design}\label{sec:imp_of_dsgn}
 %Why is Design/Architecture so important when doing this?
 
-System design or architecture acts as a common vision for not only the teams but also for the communication between all the product owners.
+System design and architecture acts as a common vision for not only teams but also for the communication between all the product owners.
 The system design acts as a “deadlock breaker in decisions” \cite{architecureRole_article} for situations where teams disagree on a particular design path.
 %non specification fix
 A second approach addresses this issue from an organizational standpoint by defining a "system owner" role \cite{kniberg12}.
-This role is more casual than an architect role, and focuses on defining a "go-to" person who can maintain long term stewardship over a sub-system. 
+This role is more casual than an architect role, and focuses on defining a "go-to" person who can maintain a long term stewardship over a sub-system. 
 
 In addition to specification, proper architecture can also be used to enable team agility.
 As discussed by Parnas \cite{Parnas72}, there are two general approaches to decomposing systems: 1) compartmentalizing a computational process and, 2) focusing on information hiding.
